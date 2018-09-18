@@ -29,9 +29,9 @@
 + (void)stub:(SEL)aSelector andReturn:(id)aValue withArguments:(id)firstArgument, ...;
 + (void)stub:(SEL)aSelector andReturn:(id)aValue times:(NSNumber *)times afterThatReturn:(id)aSecondValue;
 
-- (id)stub DEPRECATED_ATTRIBUTE;
-- (id)stubAndReturn:(id)aValue DEPRECATED_ATTRIBUTE;
-- (id)stubAndReturn:(id)aValue times:(id)times afterThatReturn:(id)aSecondValue DEPRECATED_ATTRIBUTE;
+- (id)stub;
+- (id)stubAndReturn:(id)aValue;
+- (id)stubAndReturn:(id)aValue times:(id)times afterThatReturn:(id)aSecondValue;
 
 // These methods will become private
 - (void)stubMessagePattern:(KWMessagePattern *)aMessagePattern andReturn:(id)aValue;
